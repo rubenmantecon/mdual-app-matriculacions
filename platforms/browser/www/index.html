@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+  <title>MatriculApp</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body class="scroll-touch">
+  <nav class="red lighten-2" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">MatriculApp</a>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <!--tabs-->
+  <div id="menu" class="col s12 m12 l12"></div>
+  <ul id="tabs" class="tabs col s12 m12 l12">
+    <li class="tab col s3 m3 l3"><a class="active" href="#test-swipe-1">Dashboard</a></li>
+    <li class="tab col s3 m3 l3"><a href="#test-swipe-2">Documents</a></li>
+    <li class="tab col s3 m3 l3"><a href="#test-swipe-3">UFs</a></li>
+    <li class="tab col s3 m3 l3"><a href="#test-swipe-4">Dades personals</a></li>
+  </ul>
+  </div>
+  <!--Dashboard-->
+  <div id="test-swipe-1" class="col s3">
+
+    <section class="center-align  ">
+      <h4>Benvingut/da a Matrics</h4>
+      <p>Aquesta es la landing page de l'aplicació. Fes servir les pestanyes per a navegar-la.</p>
+    </section>
+  </div>
+
+  <!--Documents-->
+  <div id="test-swipe-2" class="col s12">
+    <div class='documents'>
+      <label>Selecciona tipus de document</label>
+      <select class="browser-default center-align">
+        <option value="" disabled selected>Escull opció</option>
+        <option value="1">DNI</option>
+        <option value="2">CatSalut</option>
+        <option value="3">Certificat d'excel·lència</option>
+        <option value="4">Resguard de pagament</option>
+      </select>
+      <ul class="collection">
+        <li class="collection-item">
+          <label>DNI</label> 
+          <i class="secondary-content material-icons dp48" style="color:red">brightness_1</i>
+          <i class="secondary-content material-icons dp48" style="color:orange">brightness_1</i>
+          <i class="secondary-content material-icons dp48" style="color:green">brightness_1</i>
+        </li>
+        <li class="collection-item">
+          <label>CatSalut</label>
+          <i class="secondary-content material-icons dp48" style="color:red">brightness_1</i>
+          <i class="secondary-content material-icons dp48" style="color:orange">brightness_1</i>
+          <i class="secondary-content material-icons dp48" style="color:green">brightness_1</i>
+        </li>
+        <li class="collection-item">
+          <label>Certificat d'excel·lència</label>
+          <i class="secondary-content material-icons dp48" style="color:red">brightness_1</i>
+          <i class="secondary-content material-icons dp48" style="color:orange">brightness_1</i>
+          <i class="secondary-content material-icons dp48" style="color:green">brightness_1</i>
+        </li>
+        <li class="collection-item">
+          <label>Resguard de pagament</label>
+          <i class="secondary-content material-icons dp48" style="color:red">brightness_1</i>
+          <i class="secondary-content material-icons dp48" style="color:orange">brightness_1</i>
+          <i class="secondary-content material-icons dp48" style="color:green">brightness_1</i>
+        </li>
+    </ul>
+    </div>
+  </div>
+
+  <!--MPs&UFs-->
+  <div id="test-swipe-3" class="col s12">
+    <div class="center-align">
+      <div class="total center-block">
+        <h4>Preu Final: <span class="total-price"></span></h4>
+      </div>
+      <div>
+        <button id="lock">Bloqueja la selecció</button>
+        <button id="select-all">De/selecciona</button>
+      </div>
+      <ul class="collapsible popout">
+
+      </ul>
+    </div>
+  </div>
+
+  <!-- Dades personals -->
+  <div id="test-swipe-4" class="col s12">
+    <div class="personal-data">
+      <ul class="collection">
+
+      </ul>
+    </div>
+  </div>
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/json.js"></script>
+  <script src="cordova.js"></script>
+
+</body>
+
+</html>
